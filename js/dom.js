@@ -22,6 +22,7 @@ selectCities.onchange = () => {
     selectCitiess(selectCities.value)
 }
 
+
 function statusCheck(status) {
     if (status) {
         return `<h2 class="activeH2">ACTIVE</h2>`
@@ -170,10 +171,6 @@ function getData(data) {
 export { getData }
 
 selectStatus.onchange = () => {
-    get(inpForSearch.value, selectStatus.value)
-}
-
-selectCities.onchange = () => {
     get(inpForSearch.value, selectStatus.value)
 }
 

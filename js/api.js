@@ -18,9 +18,16 @@ async function add(newUser) {
 }
 
 async function selectCitiess(value) {
-    await axios.get(`${API}?city=${value}`)
-    get()
-} 
+    let { data } = await axios.get(API)
+
+    let filtered = data;
+
+    if (value !== "") {
+        filtered = data.filter(el => el.city === value)
+    }
+
+    getData(filtered)
+}
 
 async function get(search = "", status = "") {
     let url = API

@@ -558,3 +558,37 @@ select:focus {
 .dialogForDel .btnNo:hover {
     background-color: #bdbdbd;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow: scroll;
+    }
+
+    .divForFlexSelectAndInp {
+        flex-direction: column;
+    }
+
+    .searchIcon {
+        display: none;
+    }
+
+    .divForInpAndIcon {
+        display: flex;
+        justify-self: center;
+    }
+
+    .h2 {
+        width: 200px;
+    }
+}
