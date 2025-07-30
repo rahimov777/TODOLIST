@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 200px;
 }
 
 .divForSelectStatus {
@@ -557,6 +558,15 @@ select:focus {
 
 .dialogForDel .btnNo:hover {
     background-color: #bdbdbd;
+}
+
+.divForFixed {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: white;
 }
 
 @media (max-width: 600px) {
