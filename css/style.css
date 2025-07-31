@@ -569,12 +569,27 @@ select:focus {
     background-color: white;
 }
 
+body.light {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.btnLightAndDark.active {
+    border: 2px solid dodgerblue;
+}
+
+
 @media (max-width: 600px) {
 
     body {
         overflow-x: hidden;
     }
-    
+
     nav {
         flex-direction: column;
         text-align: center;

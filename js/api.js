@@ -1,6 +1,6 @@
 import { getData } from "./dom.js"
 
-let API = 'https://687f431aefe65e520088ff58.mockapi.io/USERS'
+let API = 'https://687f431aefe65e520088ff58.mockapi.io/data'
 
 async function Delete(id) {
     await axios.delete(`${API}/${id}`)
