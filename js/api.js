@@ -25,6 +25,9 @@ async function selectCitiess(value) {
     if (value !== "") {
         filtered = data.filter(el => el.city === value)
     }
+    if(value == "all") {
+        filtered = data
+    }
 
     getData(filtered)
 }
